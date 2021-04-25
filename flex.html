@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Navigation bar</title>
+        <style type="text/css">
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+
+        }
+        a:link,a:visited{
+            display:block;
+            font-weight:bold;
+            color:#ffffff;
+            background-color:#95bf21;
+            width:120px;
+            text-align:center;
+            padding:4px;
+            text-transform:uppercase;
+            text-decoration:none;
+        }
+        a:hover,a:active{
+            background-color:#7a991a;
+        }
+        li{
+            float:left;
+        }
+        span{
+            color:purple;
+        }
+        .navlist{
+            display:flex;
+        }
+        .navlist li{
+            margin:1rem;
+            list-style:none;
+        }
+        #home{
+            background-color:skyblue;
+            height:50vh;
+            text-align:center;
+            display:grid;
+            place-items:center;
+        }
+        
+        img.center{
+            display:block;
+            margin:auto;
+            background-color:skyblue;
+        }
+        #second{
+            background: #414141;
+        }
+        .container{
+            height:100vh;
+            background-color:royalblue;
+            max-width:600px;
+            min-width:92%;
+            margin:auto;
+            padding:3rem;
+            display:flex;
+        }
+        .col1,.col2,.col3{
+            margin:1rem;
+
+        }
+        .col1,.col2,.col3{
+            background-color:#fff;
+            padding:1rem;
+        }
+        
+            </style>
+    
+    </head>
+    <body>
+        
+    <header>
+        <h1>
+            
+                <img class="logo" src="https://cdn3.vectorstock.com/i/1000x1000/07/72/letter-b-i-and-s-with-bike-logo-design-concept-vector-30290772.jpg"height="100px"></a>
+            
+        </h1>
+        <nav>
+            <ul class="navlist">
+            <li><a href="#home">accessories</a></li>
+            <li><a href="#home">dealler network</a></li>
+            <li><a href="#home">services</a></li>
+            <li><a href="#IMAGE">image</a></li>
+            <li><a href="#home">help</a></li>
+            <li><a href="#ABOUT US">about us</a></li>
+        
+        </nav>
+        </header>
+        
+        <section id="IMAGE">
+            <img class="center"  src="https://image.shutterstock.com/image-photo/phitsanulok-province-thailand-december-1-260nw-1247833648.jpg" width="50%" height="500">
+        </section>
+
+        <section id="ABOUT US">
+            <!--  parent is the container -flexbox-->
+              <div class="container">
+            <!--      col1 ,col2 and col3 are children-->
+              <div class="col1">
+                  Person or organization that maintains a business relationship with, and uses  service from, Cloud Providers.
+                  
+              </div>
+                <div class="col2">
+                   Person, organization or entity responsible for making a service available to Cloud Consumers
+            
+                </div>
+                <div class="col3">
+                   An entity manages the use, performance and delivery of cloud services, and  negotiates relationships between Cloud Providers and Cloud Consumers
+                </div>
+              </div>
+            </section>
+        
+   
+</body>
+</html>
