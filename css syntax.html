@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ h2{
+  color:rgb(211, 168, 29);
+  text-align: center;
+} 
+div p {
+  background-color: rgb(22, 241, 186);
+}
+div > p{
+    background-color:rgb(22, 241, 186);
+}
+a:link {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+a[target=_blank] {
+  background-color:pink;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+.container{
+  width:min(991, 80%);
+  margin:auto;
+}
+.d-flex{
+  gap:2rem;
+}
+.box{
+  height: 200px;
+  width:50%;
+}
+.box1{
+  background-color:rgb(22, 241, 186);
+  box-sizing:border-box;
+  padding: 5rem;
+  border:10px solid;
+  margin-bottom:1rem;
+}
+.box2{
+  background-color:rgb(22, 110, 241);
+  padding: 5rem;
+  border:10px solid;
+}
+q {outline-color:red;}
+
+q.dotted {outline-style: dotted;}
+q.dashed {outline-style: dashed;}
+q.groove {outline-style: groove;}
+q.outset {outline-style: outset;}
+
+</style>
+</head>
+<body>
+  <h1><center><marquee>Css Syntax</marquee></center></h1>
+<h2>The words nature and natural are used for all the things that are normally not made by humans.</h2>
+<h2>These paragraphs are styled with CSS.</h2>
+<h1><center><marquee>Css Selector</marquee></center></h1>
+<h2>Combinator Selector</h2>
+<h3>Descendant selector</h3>
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+<div>
+  <p>I am a classical dancer.</p>
+  <p>My favourite actor is sivakarthikeyan..</p>
+  <section><p>I love to watch horror movies.</p></section>
+</div>
+<p>i love to cook..</p>
+<p>I love to listen melodies....!</p>
+<h2>Css pseudo classes</h2>
+<h3>CSS Links</h3>
+<p><b><a href="https://www.w3schools.com/css/default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<h2>Css pseudo elements selector</h2>
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<h2>CSS [attribute="value"] Selector</h2>
+<p>The link with target="_blank" gets a pink  background:</p>
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+
+<p class="dotted">A dotted border.</p>
+<br><br><br>
+<p class="dashed">A dashed border.</p>
+<br><br><br>
+<p class="solid">A solid border.</p>
+<br><br><br>
+<p class="double">A double border.</p>
+<br><br><br>
+<p class="groove">A groove border.</p>
+<br><br><br>
+<p class="ridge">A ridge border.</p>
+<br><br><br>
+<p class="inset">An inset border.</p>
+<br><br><br>
+<p class="outset">An outset border.</p>
+<br><br><br>
+<p class="none">No border.</p>
+<br><br><br>
+<p class="hidden">A hidden border.</p>
+<br><br><br>
+<p class="mix">A mixed border.</p>
+<br><br><br>
+<div class="container">
+  <div class="box1"></div>
+  <div class="box2"></div>
+</div>
+<h2>The outline-style Property</h2>
+
+<p class="dotted">A dotted outline</p>
+<br><br><br>
+<p class="dashed">A dashed outline</p>
+<br><br><br>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<br><br><br>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+<br><br><br>
+
+</body>
+</html>
