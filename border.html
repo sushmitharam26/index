@@ -1,3 +1,78 @@
-<html>
-<head>
-<title>border</title>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            color:rgba(79, 7, 247, 0.411);
+            font-family:roboto;
+            background:rgb(18, 22, 29);
+            }
+            h1{
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                padding-top:40%;
+                opacity:.6;
+                text-shadow:black;
+            }
+            @media only screen and (min-width:1000px) {
+                h1{
+                    padding-top:20%;
+                }
+            }
+            .block{
+                position:relative;
+                width:50%;
+                height:400px;
+                margin:10% auto 0;
+                background:url(http://images2.fanpop.com/images/photos/7800000/Nature-Full-HD-Wallpaper-national-geographic-7822261-1920-1080.jpg);
+                background-size:cover;
+                background-repeat: no-repeat; 
+                }
+                .glow::before, .glow::after {
+                    content:'';
+                    position:absolute;
+                    left:-2px;
+                    top:-2px;
+                    background:linear-gradient(
+                        -45deg,
+                        #00ff66,
+                        #00ffff,
+                        #ff00ff,
+                        #ff0099,
+                        #099fff);
+                        background-size:400%;
+                        height: calc(100% + 5px);
+                        width:calc(100% + 5px);
+                        z-index: -1;
+                        animation:change 40s linear infinite;
+                }
+                @keyframes change{
+                    0%{
+                        background-position:0 0;
+                    }
+                    50%{
+                        background-position:400% 0;
+                    }
+                    100%{
+                        background-position:0 0;
+                    }
+                }
+                .glow::after{
+                    filter:blur(40px);
+                    opacity:.5;
+                }
+    </style>
+    <body>
+        <div class="block glow">
+            <H1>CSS Glwing Border <br>
+            Animation On <br>Images</H1>
+        </div>
+    </body>
+    </html>
